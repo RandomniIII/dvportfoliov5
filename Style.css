@@ -10,7 +10,7 @@ body{
 .text{
   position: relative;
   top: 150px;
-  width: 16em;
+  width: 10em;
   margin: 0 auto;
   border-right: 0px solid rgba(255,255,255,0.75);
   font-size: 180%;
