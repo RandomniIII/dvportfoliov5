@@ -1,0 +1,175 @@
+html{
+  min-height: 100%;
+  overflow: hidden;
+}
+body{
+  background-image: url(bg.jpg);
+  height: calc(100vh - 8em)
+  padding: 4em;
+  color: black;
+  font-family: ;
+  background
+}
+.text{
+  position: relative;
+  top: 150px;
+  width: 16em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,0.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+.type-effect{
+  animation: effect 4s steps(40) 1s 1 normal both,
+  blinkTextCursor 500ms steps(40) infinite normal;
+}
+@keyframes effect{
+  from{
+    width: 0;
+  }
+  to{
+    width: 16em;
+  }
+}
+@keyframes blinkTextCursor{
+  from{
+    border-right-color: rgba(225,225,225,0.75);
+  }
+  to{
+    border-right-color: transparent;
+  }
+}
+.btn-hover{
+  height: 50px;
+  width: 195px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  margin-top: 150px;
+  animation: btn 4s ease;
+}
+@keyframes btn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+.btn-hover a{
+  text-decoration: none;
+  color: #fff;
+}
+.btn-hover:hover{
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.btn-hover.color-3{
+  background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+*
+{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.navbar
+{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.navbar a
+{
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 14px 28px;
+}
+.navbar a:hover
+{
+  background-color: white;
+  color: black;
+}
+.inactiveLink {
+  pointer-events: none;
+  cursor: default;
+}
+.content p
+{
+  text-align: justify;
+  margin: 10px;
+  padding: 10px;
+}
+#toggle
+{
+  display: none;
+}
+.togglearea
+{
+  background-color: black;
+  border-bottom: 2px solid white;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.togglearea label
+{
+  background-color: white;
+  height: 45px;
+  width: 50px;
+  color: black;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.togglearea label span
+{
+  background-color: black;
+  height: 4px;
+  width: 70%;
+  margin: 2px 0px;
+}
+.togglearea
+{
+  display: none;
+}
+@media screen and (max-width: 700px)
+{
+  .navbar
+  {
+    flex-direction: column;
+    display: none;
+  }
+  #toggle:checked + .navbar
+  {
+    display: flex;
+  }
+  .togglearea
+  { 
+    display: flex;
+  }
+}

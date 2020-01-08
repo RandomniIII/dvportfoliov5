@@ -1,0 +1,123 @@
+* 
+{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.navbar
+{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.navbar a
+{
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 14px 28px;
+}
+.navbar a:hover
+{
+  background-color: white;
+  color: black;
+}
+.inactiveLink {
+  pointer-events: none;
+  cursor: default;
+}
+.content p
+{
+  text-align: justify;
+  margin: 10px;
+  padding: 10px;
+}
+#toggle
+{
+  display: none;
+}
+.togglearea
+{
+  background-color: black;
+  border-bottom: 2px solid white;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.togglearea label
+{
+  background-color: white;
+  height: 45px;
+  width: 50px;
+  color: black;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.togglearea label span
+{
+  background-color: black;
+  height: 4px;
+  width: 70%;
+  margin: 2px 0px;
+}
+.togglearea
+{
+  display: none;
+}
+
+.btn-hover{
+  height: 50px;
+  width: 195px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  margin-top: 110px;
+}
+.btn-hover a{
+  text-decoration: none;
+  color: #fff;
+}
+.btn-hover:hover{
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.btn-hover.color-3{
+  background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+@media screen and (max-width: 700px)
+{
+  .navbar
+  {
+    flex-direction: column;
+    display: none;
+  }
+  #toggle:checked + .navbar
+  {
+    display: flex;
+  }
+  .togglearea
+  { 
+    display: flex;
+  }
+}
