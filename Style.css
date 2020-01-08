@@ -1,10 +1,10 @@
 html{
-/*   min-height: 100%; */
+  min-height: 100%;
   overflow: hidden;
 }
 body{
   background-image: url(bg.jpg);
-  height: calc(100vh - 8em)
+/*   height: calc(100vh - 8em) */
   padding: 4em;
   color: black;
   font-family: ;
