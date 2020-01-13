@@ -58,6 +58,7 @@ body{
   transition: all .4s ease-in-out;
   margin-top: 150px;
   animation: btn 4s ease;
+  -webkit-tap-highlight-color: transparent;
 }
 @keyframes btn{
   from{
