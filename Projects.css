@@ -1,5 +1,4 @@
-*
-{
+*{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -94,6 +93,42 @@ html {
   text-decoration: none;
   font-family: 'Rubik', sans-serif;
   color: purple;
+}
+
+.action{
+  text-align: center;
+}
+
+.btn-hover{
+  height: 50px;
+  width: 195px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  animation: btn 4s ease;
+  outline: none;
+}
+
+.btn-hover:hover{
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.btn-hover.color-3{
+  background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
 }
 @media screen and (max-width: 650px) {
   .column {
