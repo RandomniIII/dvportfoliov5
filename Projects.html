@@ -30,15 +30,40 @@
 	<div class="navbar">
 		<a href="page.html" class="inactiveLink">Denis Vasquez</a>
 		<a href="Index.html">Home</a>
-  	<a href="Projects.html">Projects</a>
-    <a href="Contact.html">Contact</a>
+      	<a href="Projects.html">Projects</a>
+        <a href="Contact.html">Contact</a>
 		<a href="About.html">About</a>
 	</div>
 
+      <div class="action">
+        <button class="btn-hover color-3" onclick="websites()">Websites</button>
+        <button class="btn-hover color-3" onclick="design()">Design</button>
+      </div>
+
+    <script type="text/javascript">
+        function websites() {
+            document.getElementById('rid-design').style.display = "none";
+            document.getElementById('rid-design2').style.display = "none";
+            document.getElementById('rid-web').style.display = "block";
+            document.getElementById('rid-web2').style.display = "block";
+            document.getElementById('rid-web3').style.display = "block";
+            document.getElementById('rid-web4').style.display = "block";
+            document.getElementById('rid-web5').style.display = "block";
+        }
+        function design() {
+            document.getElementById('rid-web').style.display = "none";
+            document.getElementById('rid-web2').style.display = "none";
+            document.getElementById('rid-web3').style.display = "none";
+            document.getElementById('rid-web4').style.display = "none";
+            document.getElementById('rid-web5').style.display = "none";
+            document.getElementById('rid-design').style.display = "block";
+            document.getElementById('rid-design2').style.display = "block";
+        }
+    </script>
   
 <div class="content">
 	<div class="row">
-  		<div class="column">
+  		<div class="column" id="rid-web">
     		<div class="card">
       			<img src="ss.png" style="width:100%">
       				<div class="container">
@@ -49,7 +74,7 @@
     		</div>
   		</div>
 
-  		<div class="column">
+  		<div class="column" id="rid-web2">
     		<div class="card">
       			<img src="ss1.png" style="width:100%">
       				<div class="container">
@@ -60,7 +85,7 @@
     		</div>
   		</div>
 
-      <div class="column">
+      <div class="column" id="rid-web3">
         <div class="card">
             <img src="ss3.png" style="width:100%">
               <div class="container">
@@ -72,7 +97,7 @@
       </div>  
   </div>
 
-      <div class="column">
+      <div class="column" id="rid-web4">
         <div class="card">
             <img src="ss4.png" style="width:100%">
               <div class="container">
@@ -84,7 +109,7 @@
       </div>  
   </div>
 
-      <div class="column">
+      <div class="column" id="rid-web5">
         <div class="card">
             <img src="ss5.png" style="width:100%">
               <div class="container">
@@ -98,7 +123,7 @@
       </div>  
   </div>
 
-      <div class="column">
+      <div class="column" id="rid-design">
         <div class="card">
             <img src="Bussines Card.png" style="width:100%">
               <div class="container">
@@ -109,11 +134,11 @@
   </div>  
 
 
-      <div class="column">
+      <div class="column" id="rid-design2">
         <div class="card">
             <img src="Diamondv4.png" style="width:100%">
               <div class="container">
-                  <p>Diamond text made in Photoshop.</p>
+                  <p>Text effect made in Photoshop.</p>
               </div>
         </div>
       </div>  
