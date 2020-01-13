@@ -97,6 +97,7 @@ html {
 
 .action{
   text-align: center;
+  display: flex;
 }
 
 .btn-hover{
