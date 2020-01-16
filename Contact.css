@@ -89,6 +89,7 @@
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
   margin-top: 110px;
+  -webkit-tap-highlight-color: transparent;
 }
 .btn-hover a{
   text-decoration: none;
