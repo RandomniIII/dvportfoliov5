@@ -132,6 +132,9 @@ html {
   background-image: linear-gradient(to right, red, #764ba2, blue, purple);
   box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
 }
+.darkmode-layer, .darkmode-toggle {
+  z-index: 500;
+}
 @media screen and (max-width: 650px) {
   .column {
     width: 100%;
